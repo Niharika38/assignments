@@ -1,0 +1,6 @@
+A = Welcome to Ruby
+puts A
+
+puts A.include?("come")
+
+puts A.include("hello")
