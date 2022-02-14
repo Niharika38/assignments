@@ -7,7 +7,7 @@ puts "The total is #{1+1}"
 
 string = "abc123"
 puts string[0,3]
-puts string[3,3]
+puts string[3,8]
 
 string[0..2] = ""
 p string

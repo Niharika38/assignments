@@ -26,7 +26,7 @@ end
 puts "enter your age"
 a = gets.chomp.to_i   
 puts a
-if a >= 18   
+if a >= 28   
   puts "You are eligible to vote."   
 else
     puts "You are not eligible to vote"

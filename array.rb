@@ -14,7 +14,7 @@ print A.shuffle
 puts
 print A.push(30) 
 puts
-print A << 25 
+print A << 25
 puts
 print A.unshift(38)  
 puts

@@ -8,6 +8,8 @@ greet = "Hello"
 greet2 = "world"
 puts "This is #{greet + " " + greet2} program"
 
+puts 58 + 39
+
 
 
 

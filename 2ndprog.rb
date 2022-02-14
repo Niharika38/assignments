@@ -22,7 +22,7 @@ end
 
 puts "Enter marks"
 a = gets.chomp.to_i   
-if a <50   
+if a <59   
   puts "Student is fail"   
 elsif a >= 50 && a <= 60   
   puts "Student gets D grade"   
