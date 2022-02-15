@@ -31,3 +31,14 @@ def check_num(a, b, c)
 end
 print check_num(5, 10, 15),"\n"
 print check_num(2, 3, 11),"\n"
+
+
+year = [2012, 1500, 1600, 2020]
+year.each do |y|
+  if y % 400 == 0
+  	 puts y.to_s + ' is leap year'
+    elsif y % 4==0 && y % 100 != 0 
+      puts y.to_s + ' is leap year'
+  else  puts y.to_s + ' is not leap year'
+  end
+end
