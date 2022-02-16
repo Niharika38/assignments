@@ -33,6 +33,7 @@ print check_num(5, 10, 15),"\n"
 print check_num(2, 3, 11),"\n"
 
 
+
 year = [2012, 1500, 1600, 2020]
 year.each do |y|
   if y % 400 == 0
