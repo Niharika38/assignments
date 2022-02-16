@@ -31,3 +31,9 @@ elsif a >= 70 && a <= 80
 elsif a >= 80 && a <= 90   
   puts "Student gets A grade"
 end
+
+def geeks
+  puts "welcome to portal"
+
+end
+geeks
