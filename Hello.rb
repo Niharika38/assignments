@@ -51,27 +51,30 @@ end
 
 # Ruby program to illustrate the passing parameters to new method
 
-# defining class Vehicle
-class Vehicle
+# defining class Automobile
+class Automobile
 
     # initialize method
-    def initialize(id, color, name)
+    def initialize(id, color, name, number)
     
     # variables
-    @veh_id = id
-    @veh_color = color
-    @veh_name = name
+    @auto_id = id
+    @auto_color = color
+    @auto_name = name
+    @auto_number = number
+
     
     # displaying values
-    puts "ID is: #@veh_id"
-    puts "Color is: #@veh_color"
-    puts "Name is: #@veh_name"
+    puts "ID is: #@auto_id"
+    puts "Color is: #@auto_color"
+    puts "Name is: #@auto_name"
+    puts "Nuber is: #@auto_number"
     puts "\n"
     end
     end
     
     # Creating objects and passing parameters
     # to new method
-    xveh = Vehicle. new("1", "Red", "ABC")
-    yveh = Vehicle. new("2", "Black", "XYZ")
+    xveh = Automobile. new("1", "Red", "ABC", "2738")
+    yveh = Automobile. new("2", "Black", "XYZ", "2902")
     
