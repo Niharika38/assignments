@@ -9,9 +9,11 @@ greet2 = "world"
 puts "This is #{greet + " " + greet2} program"
 
 #calci
-puts "enter number"
+puts "Enter 1st number"
 value1 = gets.to_i
+puts "Enter operator"
 symboll = gets.chomp
+puts " Enter 2nd number"
 value2 = gets.to_i
 
 def addition(value1, value2)
@@ -51,30 +53,3 @@ end
 
 # Ruby program to illustrate the passing parameters to new method
 
-# defining class Automobile
-class Automobile
-
-    # initialize method
-    def initialize(id, color, name, number)
-    
-    # variables
-    @auto_id = id
-    @auto_color = color
-    @auto_name = name
-    @auto_number = number
-
-    
-    # displaying values
-    puts "ID is: #@auto_id"
-    puts "Color is: #@auto_color"
-    puts "Name is: #@auto_name"
-    puts "Nuber is: #@auto_number"
-    puts "\n"
-    end
-    end
-    
-    # Creating objects and passing parameters
-    # to new method
-    xveh = Automobile. new("1", "Red", "ABC", "2738")
-    yveh = Automobile. new("2", "Black", "XYZ", "2902")
-    

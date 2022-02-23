@@ -5,14 +5,13 @@ print num
 puts " unique elements is :"
 new_nums = num.uniq
 puts new_nums
-puts
+puts "\n"
 
 # find if a substring is part of a string
 A = "Welcome to Ruby"
 puts A
 puts A.include?("come")
 puts A.include?("hello")
-
 
 #by using if
 if A.include?('Ruby')
@@ -25,8 +24,8 @@ end
 #getting input from user
 puts "enter your age"
 a = gets.chomp.to_i   
-puts a
-if a >= 28   
+
+if a >= 18   
   puts "You are eligible to vote."   
 else
     puts "You are not eligible to vote"
