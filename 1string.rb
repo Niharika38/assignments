@@ -1,16 +1,13 @@
-puts "".empty?
+puts " ".empty?
 
 name = "Zayn"
 puts "Hello #{name}"
 
 puts "The total is #{1+1}"
 
-string = "abc123"
+string = "abc123456"
 puts string[0,3]
-puts string[3,8]
-
-string[0..2] = ""
-p string
+puts string[3,7]
 
 
 string = "Today is Saturday"
@@ -55,27 +52,6 @@ puts "Your full name is #{full_name}"
 puts "Your full name reversed is #{full_name.reverse}"
 puts "Your name has #{full_name.length} characters."
 
-# Iterate over each character of a String
-str = "abcdeU"
-temp = ""
-str.each_char do |char|
- puts char if ['a','e','i','o','u'].include? char.downcase
-end
-
-#can add with_index to get the position of the characters.
-str = "abcdeU"
-temp = ""
-str.each_char.with_index do |char, i|
- puts "#{i} #{char}" if ['a','e','i','o','u'].include? char.downcase
-end
-
-
-#method is str.each_byte to get the individual bytes. 
-str = "abcdeABCDE"
-str.each_byte do |char|
- puts char
-end
-
 # Convert a String to a character array
 char_array = "abcdeABCDE".chars
 
@@ -87,14 +63,9 @@ puts "HELLO World".size
 
 #Get the count of characters of a String
 
-puts "look up!".count("o")
+puts "look up!".count("k")
 
 puts "look up!".count("m")
-
-puts "abcdef".count("a-c", "c-f")
-
-
-puts "abcdeUUU".downcase.count("aeiou")
 
 #Reverse a String
 str = "Anna"
@@ -114,58 +85,23 @@ puts "Red, Red and Blue".gsub("Red", "Orange")
 #to replace the first occurrence, use the str.sub.
 puts "Red, Red and Blue".sub("Red", "Orange") 
 
-#str.gsub also takes a hash or a block.
-puts "organization".gsub("z", 'z' => 's') 
-
 
 #Split a String
 
 sentence = "There Is No Spoon"
-puts words = sentence.split
-
-sentence = "There_Is_No_Spoon"
-puts words = sentence.split("_")
-
-
-sentence = "ThereIsNoSpoon"
-puts words = sentence.split(/(?=[A-Z])/)
-
-sentence = "a111b222c333"
-puts words = sentence.split(/(?=[a-z])/)
-
+print words = sentence.split
+puts
 
 # Trim a String
-puts " hEllo WOrlD \n\t\v\r ".strip 
-# "hEllo WOrlD"
-#Trim the last character of a String
+puts " hEllo WOrlD ".strip 
 
-"...hello...world...".chomp(".")
-# "...hello...world.."
-"...hello...world".chomp(".")
-"...hello...world"
-"...hello...world...\n".chomp(".")
-# "...hello...world...\n"
-"...hello...world...\n".chomp
-# "...hello...world..."
-"...hello...world...\r".chomp
-# "...hello...world..."
-"...hello...world...\r\n".chomp
-# "...hello...world..."
-"...hello...world...\n\r".chomp
-"...hello...world...\n"
 
 #Add a String before another String
 a = "world" 
 puts a.prepend("hello ") 
 
 
-
-#to Insert a String
-a = "hello" 
-puts a.insert(a.length, " world") 
-
-#Methods for changing the case of a String
-#tr.downcase will convert each character of a string into lowercase.
+#.downcase will convert each character of a string into lowercase.
 puts "HELLO World".downcase 
 # "hello world"
 #to convert each character of a string into uppercase.
@@ -173,19 +109,17 @@ puts "hello worlD".upcase
 
 puts "hEllo wOrlD".capitalize 
 
-puts "hEllo WOrlD".swapcase 
-
 #to Add Strings
-str1 = "hello"
-str2 = "world"
-str1.concat(" ").concat(str2)
-puts "#{str1}"
+str1 = "hellooo"
+str2 = "worldss"
+str = str1.concat(" ").concat(str2)
+puts "#{str}"
 
 # << is same as concat
 str1 = "hello"
 str2 = "world"
-str1 << " " << str2
-puts "#{str1}"
+str = str1 << " " << str2
+puts "#{str}"
 
 
 # to Get substring
@@ -205,6 +139,5 @@ puts str.end_with?(".")
 #Empty String check
 output = ""
 puts output.empty?
-output = " "
+output = "hi"
 puts output.empty?
-

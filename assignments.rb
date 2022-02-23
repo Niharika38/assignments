@@ -24,7 +24,6 @@ end
 #getting input from user
 puts "enter your age"
 a = gets.chomp.to_i   
-
 if a >= 18   
   puts "You are eligible to vote."   
 else
@@ -46,11 +45,68 @@ elsif a >= 80 && a <= 90
 end
 
 
+def geeks
+  puts "welcome to portal"
+
+end
+geeks
+
+# Ruby program to illustrate blocks
+# Method with single yield statement
+def print_once
+	puts"Hello! I am Method"
+	
+# using yield statement
+yield
+end
+
+# Block 1
+print_once { puts "Hello! I am Block 1" }
+
+# Method with two yield statement
+def print_twice
+# using yield statement
+yield
+end
+# Block 2
+print_twice { puts "Hello! I am Block 2" }
+
+
+puts ("logical operators in Ruby")
+ruby = "x"
+programming = "y" 
+if ruby == "new" && programming == "lang"
+  puts "New Language"
+else
+  puts "Invalid"
+end
+     
+p, q, r, s = 1, 2 ,3 , 4
+if p == 1 && q == 2 && r == 3 && s == 4
+  puts sum = p + q + r + s
+else
+  puts "Not valid"
+end
+
+#boolena or operator
+programming = "ruby"
+ruby = "old"
+if ruby == "new" || programming == "ruby"
+  puts "new language ruby"
+end
+  
+ruby = "awesome"
+if ruby == "noo" || programming == "lang"
+  puts "ruby"
+else
+  puts "Sorry"
+end
+
 #access an individual element using its index
 sharks = ["Tiger", "Great White", "Hammerhead", "Angel"]
 puts sharks[0]    
 puts sharks[1]    
-puts sharks[-1]   
+
 
 #access first and last elements of an array:
 sharks = ["Tiger", "Great White", "Hammerhead", "Angel"]
@@ -69,16 +125,15 @@ puts sample
 #reverse the order of the elements in an array
 sharks = ["Angel", "Great White", "Hammerhead", "Tiger"]
 reversed_sharks = sharks.reverse
-puts reversed_sharks
+print reversed_sharks
+puts
 
-result = 0
-[1, 2, 3].each {|num| result += num}
-print result
 
 #to join the elements in an array
 sharks = ["Hammerhead", "Great White", "Tiger", "Whale"]
-result = sharks.join(" ")
+result = sharks.join("   ")
 print result
+puts
 
 
 #to change array to string
@@ -89,6 +144,7 @@ puts sharks.to_s
 numbers = [2,4,6,8]
 squared_numbers = numbers.map {|number| number * number}
 print squared_numbers
+puts
 
 # to get a subset of values from your array 
 sharks = ["Tiger", "Great White", "Hammerhead", "Angel"]
