@@ -43,87 +43,10 @@ end
 comment = Book.new("Ruby on Rails","Jason","2002")
 
 
-# Ruby program to demonstrate
-# the public access control
-class GeeksforGeeks
-	# public method without using
-	# public keyword
-    public	
-	def geeks_1
-		puts "public method geeks_1 is called"
-  
-	end
-	# using public keyword
-	public
-	def geeks_2
-		puts "public method geeks_2 is called"
-        puts "this is ruby program"
-	end
-	def geeks_3
-
-		puts "public method geeks_3 is called"
-		
-		# calling geeks_1 method
-		geeks_1
-		
-		# calling geeks_1 method using
-		# self-keyword
-		self.geeks_2
-        puts "\n"
-	end		
-end
-
-# creating the object of
-# class GeeksforGeeks
-obj = GeeksforGeeks.new
-
-# calling method geeks_1
-obj.geeks_1
-
-# calling method geeks_2
-obj.geeks_2
-
-# calling method geeks3
-obj.geeks_3
 
 
-# Ruby program to demonstrate
-# the private access control
-# creating class
-class GeeksforGeeks
-	
-	# using initialize method
-	# it can't be private
-	def initialize
-		puts "This is the initialize Method"
-	end
-	
-	# public method
-	def geeks_1
-		
-			puts "Public geeks_1 Method"
-		end
-	
-	# using the private keyword to
-	# declare a private method
-		def geeks_2
-		
-		puts "This is Private Method"
-        puts "\n"
-	end
-	
-end		
 
-# creating the object of
-# the class GeeksforGeeks
-obj = GeeksforGeeks.new
 
-# calling method geeks_1
-# (geeks1 method is public method)
-obj.geeks_1
-
-# calling private method will give the error
-obj.geeks_2
 
 
 # Ruby program to demonstrate
