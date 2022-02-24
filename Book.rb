@@ -1,3 +1,4 @@
+
 # defining class Automobile
 class Automobile
 
@@ -19,10 +20,14 @@ class Automobile
     end
     end
     
-    # Creating objects and passing parameters
-    # to new method
-    xauto = Automobile. new("1", "Red", "AUDI", "2738")
-    yauto = Automobile. new("2", "Black", "BMW", "2902")
+    # Creating objects and passing parameters to new method
+    
+	a = Automobile.new("146", "white", "Benz", "2738")
+    b = Automobile.new("238", "Blue", "lamborgini", "2902")
+	c = Automobile.new("273", "purple", "verna", "2929")
+    d= Automobile.new("171", "Black", "toyota", "0001")
+	x = Automobile.new("129", "Red", "AUDI", "4444")
+    y = Automobile.new("029", "Black", "BMW", "9999")
     
 
 #books
@@ -49,49 +54,3 @@ comment = Book.new("Ruby on Rails","Jason","2002")
 
 
 
-# Ruby program to demonstrate
-# the protected access control
-
-#!/usr/bin/ruby
-
-class GeeksforGeeks
-	
-	# using initialize method
-	def initialize
-		
-		# calling geeks_2 method
-		geeks_2
-		
-		# calling geeks_2 method
-		# using self-keyword
-		self.geeks_2
-		
-	end
-	
-	# public method
-	def geeks_1
-		puts " geeks_1 method is called"
-	end
-	
-	# defining the protected method using
-	# protected keyword
-	
-	
-	def geeks_2
-		puts " geeks_2 method is called"
-        puts "\n"
-	end
-
-end
-
-# creating the object of class GeeksforGeeks
-obj = GeeksforGeeks.new
-
-# calling method
-obj.geeks_1
-
-
-# if you will try to call protected method
-# using the object of class then it will
-# give error
-obj.geeks_2
