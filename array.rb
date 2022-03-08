@@ -16,7 +16,7 @@ print A.push(30)
 puts
 print A << 25
 puts
-print A.unshift(38)  
+print A.unshift(35)  
 puts
 print A.pop
 puts
