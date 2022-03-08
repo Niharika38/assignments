@@ -14,7 +14,7 @@ string = "Today is Saturday..."
 puts string.include?("Saturday")
 
 
-lang1 = "ruby"
+lang1 = "rubyprogram"
 lang2 = "Ruby"
 puts lang1.upcase == lang2.upcase
 
