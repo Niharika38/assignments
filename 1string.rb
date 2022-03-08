@@ -1,6 +1,6 @@
 puts " ".empty?
 
-name = "Zayn"
+name = "Zaynnnn"
 puts "Hello #{name}"
 
 puts "The total is #{1+1}"
