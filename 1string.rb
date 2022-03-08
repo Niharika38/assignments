@@ -5,12 +5,12 @@ puts "Hello #{name}"
 
 puts "The total is #{1+1}"
 
-string = "abc123456"
+string = "abc1234567899999"
 puts string[0,3]
 puts string[3,7]
 
 
-string = "Today is Saturday"
+string = "Today is Saturday..."
 puts string.include?("Saturday")
 
 
