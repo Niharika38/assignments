@@ -11,7 +11,7 @@ puts string[3,7]
 
 
 string = "Today is Saturday..."
-puts string.include?("Saturday")
+puts string.include?("Saturday sunday")
 
 
 lang1 = "rubyprogram"
