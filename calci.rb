@@ -12,7 +12,7 @@ end
 
 add = addition(value1, value2)
 
-def subtraction(value1, value2)
+def subt(value1, value2)
     return value1-value2
 end 
 
