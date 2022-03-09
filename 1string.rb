@@ -43,6 +43,11 @@ puts "abcd".upcase
 
 puts "ABCD".downcase
 
+
+lang1 = "rubyprogram"
+lang2 = "Ruby"
+puts lang1.upcase == lang2.upcase
+
 puts "Enter your first name"
 first_name = gets.chomp
 puts "Enter your last name"
